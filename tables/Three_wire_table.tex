@@ -1,0 +1,21 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{makecell,rotating,multirow,diagbox}
+\usepackage{graphicx,amssymb,amsfonts,amsmath,amsthm,booktabs}
+\begin{document}
+	\begin{table*}
+		\centering
+		\caption{Comparison of different obfuscations in terms of their transformation capabilities}
+		\begin{tabular}{cccccc} % 控制表格的格式
+			\toprule
+			\multirow{2}{*}obfuscators & \multicolumn{5}{c}{Transformations}   \\
+			\cline{2-6}  % 这部分是画一条横线在2-6 排之间
+			&    Renaming & Dead code removal & control flow obfuscation & string encryption & code encryption \\
+			\midrule
+			Proguard &  \checkmark & $\times$  & $\times$ & \checkmark  & $\times$ \\
+			Allatori & \checkmark & $\times$  & $\times$ & \checkmark  & $\times$ \\
+			DashO & \checkmark & $\times$  & $\times$ & \checkmark  & $\times$ \\
+			Androcrypt & \checkmark & $\times$  & $\times$ & \checkmark  & $\times$ \\
+			\bottomrule
+		\end{tabular}
+	\end{table*}
+\end{document}

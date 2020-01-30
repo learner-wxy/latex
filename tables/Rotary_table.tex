@@ -1,0 +1,14 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{makecell,rotating}
+\begin{document}
+	\begin{table}
+		\settowidth\rotheadsize{\theadfont math}
+		\begin{tabular}{|c|c|}
+			\hline
+			\thead{name} & \rothead{math\\grade} \\  
+			\hline
+			Hebe  & 100 \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{document}

@@ -1,0 +1,21 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{makecell,multirow,diagbox}
+
+\begin{document}
+	\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	\multirow{2}*{} &  system & \multicolumn{2}{c|}{4.0} &  \multicolumn{2}{c|}{6.0} \\ 
+	\cline{2-6}
+               &   Device  & D1 & D2 & D3 & D4 \\
+	\hline 
+	\multirow{2}*{Runtime} & 600 byte & 12/23/34 & 23/2/1 & 12/1/2 & 1/2/3 \\
+	\cline{2-6}
+                     & 1000 byte  & 12 & 21 & 12 & 12  \\
+	\hline
+	\multirow{2}*{System} & 600 byte & 12 & 23 & 12 & 1 \\
+	\cline{2-6}
+                      & 1000 byte  & 12 & 21 & 12 & 12 \\
+	\hline
+
+\end{tabular}
+\end{document}
