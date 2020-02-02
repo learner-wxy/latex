@@ -1,0 +1,94 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=2.50cm,right=2.50cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx,amssymb,amsfonts,amsmath,amsthm,booktabs}
+\usepackage{appendix}
+\usepackage[doublespacing]{setspace}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{float}
+\usepackage{array}
+\usepackage{bigstrut,multirow,rotating}
+\usepackage{color}
+\usepackage{caption,subcaption}%for picture no number
+
+%set the font times new roma
+\usepackage[T1]{fontenc}
+\usepackage{newtxmath,newtxtext}
+\usepackage{lipsum} % just to generate dummy text
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\pagestyle{empty}%
+	\null%
+	\vspace*{-6pc}%
+	\begin{center}
+		\begingroup
+		\setlength{\parindent}{0pt}
+		\begin{minipage}{0.28\linewidth}
+			For office use only\\[4pt]
+			\makebox[0.15\linewidth][l]{T1}\rule[-2pt]{0.85\linewidth}{0.5pt}\\[4pt]
+			\makebox[0.15\linewidth][l]{T2}\rule[-2pt]{0.85\linewidth}{0.5pt}\\[4pt]
+			\makebox[0.15\linewidth][l]{T3}\rule[-2pt]{0.85\linewidth}{0.5pt}\\[4pt]
+			\makebox[0.15\linewidth][l]{T4}\rule[-2pt]{0.85\linewidth}{0.5pt}
+		\end{minipage}%
+		\begin{minipage}{0.44\linewidth}
+			\centering
+			Team Control Number\\[0.7pc]
+			{\color{red}\LARGE\textbf{12345}}\\[1.8pc]                                 %number
+			Problem Chosen\\[0.7pc]
+			{\color{red}\Huge\textbf{A}}                                                %problem
+		\end{minipage}%
+		\begin{minipage}{0.28\linewidth}
+			For office use only\\[4pt]
+			\makebox[0.15\linewidth][l]{F1}\rule[-2pt]{0.85\linewidth}{0.5pt}\\[4pt]
+			\makebox[0.15\linewidth][l]{F2}\rule[-2pt]{0.85\linewidth}{0.5pt}\\[4pt]
+			\makebox[0.15\linewidth][l]{F3}\rule[-2pt]{0.85\linewidth}{0.5pt}\\[4pt]
+			\makebox[0.15\linewidth][l]{F4}\rule[-2pt]{0.85\linewidth}{0.5pt}
+		\end{minipage}
+		\par
+		\vskip 10pt
+		\rule{\linewidth}{0.5pt}\par
+			\textbf{{\the\year}\\%
+				\vspace*{-4mm}                 %change the distance between row
+			MCM/ICM \\
+			\vspace*{-5mm}
+			Summary Sheet}%
+		\endgroup
+		\vskip 10pt
+	\end{center}
+\vspace*{-10mm}
+\begin{center}
+	\textbf{TitleTitleTitleTitleTitleTitle}                              %title
+\end{center}
+\begin{center}
+	\vspace*{-5mm}
+	\textbf{Summary}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%up is copy
+
+	there is summary here is summaryhere is summaryhere is summaryhere is summaryhere is summaryhere is summaryhere is summary
+	
+	here is summaryhere is summaryhere is summaryhere is summaryhere is summaryhere is summaryhere is summaryhere is summary                                                  %summary
+
+	\noindent\textbf{\small{Keywords}}:  keyword1; keyword2             %key
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\clearpage
+	\tableofcontents
+	\clearpage
+	\pagestyle{fancy}
+	\lhead{Team \# 12345}                                                %our number
+	\rhead{Page \thepage{} of \pageref{LastPage}}%you need to compile twice to remove "???"
+	%\cfoot{}
+	\setcounter{page}{1}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
+		
+	\input{part/problem}
+\input{part/model1}
+\input{part/model2}
+\input{part/model3}
+\input{part/evaluate}
+\input{part/memo}
+\input{part/reference}
+\end{document}
